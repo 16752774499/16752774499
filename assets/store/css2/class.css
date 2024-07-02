@@ -1,0 +1,199 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html body{
+    max-width: 550px;
+    margin: 0 auto;
+}
+.head{
+    width: 100%;
+    background: #fff;
+   
+}
+.headbox{
+    height: 30px;
+    width: 90%;
+    margin:10px 5%;
+    background: #F0F3F7;
+    border-radius: 20px;
+     display: flex;
+     align-items: center;
+    justify-content: flex-start;
+}
+.head .headbox img{
+     width: 15px;
+     height: 15px;
+            margin-left: 9px;
+}
+.head .headbox input{
+     padding-left: 7px;
+    height: 1.825rem;
+    line-height: 1.825rem;
+    font-size: 14px;
+    width: 70%;
+    border:0px;
+    outline: none;
+    background: #F0F3F7;
+}
+.goods-list{
+    padding-top: 5px;
+    display: flex;
+        height: calc(100vh - 107px);
+        background: #fff;
+}
+.goods-left{
+    width:25%;
+    height: 100%;
+    background: linear-gradient(270deg,#FF9F7D 0%,#FE5749 100%);
+    overflow-y: auto; /* 允许垂直滚动 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yiji{
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    text-align: center;
+    position: relative;
+     text-decoration:none;
+}
+.yiji p{
+    font-weight: 400;
+    font-size: .875rem;
+    color: #fff;
+}
+.yiji  .active{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0.125rem;
+    height: 1.5625rem;
+    background: #FC5927;
+    border-radius: 0 0.0625rem 0.0625rem 0;
+    left: 0%;
+        top: 50%;
+    transform: translateY(-50%);
+}
+.goods-right{
+    width:100%;
+    height: 100%;
+    overflow-y: scroll; /* 允许垂直滚动 */
+    display: flex;
+        flex-direction: column;
+    align-items: center;
+}
+.goods-right::-webkit-scrollbar {
+      display: none;
+    }
+.titles{
+        font-size: .875rem;
+    color: #1e2331;
+}
+.erjibox{
+    border-radius: 10px;
+    background: #fff;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px 5%;
+    padding: 5px;
+}
+.erjibox .box{
+    margin: 10px 0;
+    display: flex;
+        flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 33%;
+     text-decoration:none;
+}
+.box img{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+.box .erjitlele{
+    color: #555555;
+    font-size: 12px;
+}
+
+
+
+.fui-navbar, .fui-footer {
+    position: fixed;
+	display: table;
+    width: 100%;
+    bottom: 0;
+    height: 2.3rem;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.option-picker .fui-navbar {
+    height: 2.25rem;
+}
+
+.fui-navbar .nav-item.btn {
+    color: #fff;
+    border-radius: 0;
+}
+
+
+
+.page-goods-detail .fui-navbar .nav-item {
+    height: 2.45rem;
+}
+
+.fui-navbar .nav-item.active,
+.fui-navbar .nav-item:active {
+    color: red
+}
+
+.fui-navbar .nav-item .label {
+    display: block;
+    font-size: 0.75rem;
+    position: relative;
+    top: -0.18rem;
+	white-space: normal;
+	padding: 0;
+}
+
+.fui-navbar .nav-item .icon {
+    font-size: 1.rem;
+    padding: 0;
+}
+.fui-navbar .nav-item.active, .fui-navbar .nav-item:active {
+    color: #000;
+}
+.fui-navbar .nav-item .badge {
+    background: red none repeat scroll 0 0;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 0.6rem;
+    height: 0.8rem;
+    left: 50%;
+    line-height: 0.8rem;
+    margin-left: 0.1rem;
+    min-width: 0.8rem;
+    padding: 0 0.2rem;
+    position: absolute;
+    top: 0.1rem;
+    vertical-align: top;
+    z-index: 100;
+}
+
+.fui-footer .btn {
+    margin-left: 0;
+    margin-top: 1.3rem;
+}
+.fui-navbar .nav-item .icon {
+    font-size: 20px;
+    padding: 0;
+}
+a{ text-decoration:none;}

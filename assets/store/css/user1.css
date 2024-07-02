@@ -1,0 +1,96 @@
+.userinfo{
+        width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0;
+    position: relative;
+}
+.user-avatar{
+        width: 2.6875rem;
+    height: 2.6875rem;
+    position: relative;
+}
+.user-avatar img{
+        width: 2.6875rem;
+    height: 2.6875rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.avatar-border{
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1.1);
+    width: 2.6875rem;
+    height: 2.84375rem;
+    background-size: cover;
+   
+}
+.user-txt{
+    margin-left: 1rem;
+        display: flex;
+    flex-direction: column;
+}
+.user-txt .name{
+    font-weight: 600;
+    color: #1e2331;
+    font-size: .7625rem;
+    
+}
+.experience{
+        display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: #985010;
+    font-size: .5625rem;
+}
+.experience-icon{
+    
+    position: relative;
+    width: 1.125rem;
+    height: 0.2125rem;
+    background: linear-gradient(270deg,#FFB95E 0%,#FFD4A7 100%);
+    border-radius: 0.15625rem;
+    z-index: 1;
+
+}
+.user-center{
+        position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: .55rem;
+    color: #f7c994;
+}
+
+.other-info .money{
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+        margin-top: 20px;
+}
+.money span{
+    font-weight: 500;
+    color: #fff;
+    font-size: 17px;
+}
+.money .title{
+    
+    font-weight: 400;
+    color: #f7c994;
+    font-size: 13px;
+
+}
+.orderimg{
+    width: 30px;
+}

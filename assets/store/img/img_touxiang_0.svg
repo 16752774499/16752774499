@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="118px" height="123px" viewBox="0 0 118 123" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>img_heizuan</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#484848" offset="0%"></stop>
+            <stop stop-color="#1D1C1E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#494949" offset="0%"></stop>
+            <stop stop-color="#1C1B1D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="头像挂件" transform="translate(-205.000000, -361.000000)">
+            <g id="img_heizuan" transform="translate(205.000000, 361.000000)">
+                <circle id="椭圆形" stroke="url(#linearGradient-1)" stroke-width="8" cx="59" cy="59" r="55"></circle>
+                <rect id="矩形" fill="url(#linearGradient-2)" x="18" y="91" width="82" height="32" rx="13"></rect>
+                <text id="普通" font-family="PingFangSC-Medium, PingFang SC" font-size="20" font-weight="400" fill="#F0BD71">
+                    <tspan x="52" y="114">普通</tspan>
+                </text>
+                <path d="M44.0812805,98.0000002 C44.5003495,98.0000002 44.8829063,98.2293983 45.0679489,98.5913476 L47.8872545,104.10636 C48.0874112,104.498492 48.0167714,104.968642 47.709495,105.290109 L37.8096509,115.657687 C37.6014376,115.875917 37.3076317,116 36.9998397,116 C36.6920476,116 36.3982417,115.875917 36.1898996,115.657687 L26.2900555,105.290109 C25.9830368,104.968518 25.9126549,104.498368 26.1129405,104.10636 L28.9317305,98.5913476 C29.1163864,98.229026 29.4994587,97.9997832 29.9188822,98.0000002 L44.0812805,98.0000002 Z" id="形状结合" fill="#F0BD71"></path>
+                <path d="M33.8912059,104 L36.9997005,107.110271 L40.1087941,104 L42,105.56324 L37.9453034,109.619456 C37.7031186,109.861825 37.3597394,110 36.9997005,110 C36.6395118,110 36.2962824,109.861825 36.0539478,109.619456 L32,105.56324 L33.8912059,104 Z" id="Fill-4" fill="#2B2A2C"></path>
+            </g>
+        </g>
+    </g>
+</svg>
