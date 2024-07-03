@@ -62,6 +62,8 @@ include './head2.php';
 			  <input type="button" value="立即登录" id="submit_login" class="btn btn-primary btn-block"/>
             </div>
 			<hr>
+
+
 			<?php if($conf['login_qq']>=1 || $conf['login_wx']>=1){?>
 			<div class="form-group text-center">
 			  <?php if($conf['login_qq']>=1){?><a href="javascript:connect('qq')"><img src="../assets/img/social/qq.png"></a>&nbsp;<?php }?>

@@ -34,6 +34,8 @@ $addsalt_js = $x->hieroglyphyString($addsalt);
     </div>
 
     <div class="block">
+
+
         <div class="block-title">
             <div class="block-options pull-right">
             <a href="../" class="btn btn-effect-ripple btn-default toggle-bordered enable-tooltip">返回首页</a>

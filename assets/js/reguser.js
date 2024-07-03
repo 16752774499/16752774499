@@ -40,11 +40,28 @@ $(document).ready(function(){
             });
         }
     });
+	//判断手机号是否注册过,增加自动跳转
+	$("input[name='phone']").blur(function(){
+        var phone = $(this).val();
+        if(phone){
+            $.get("ajax.php?act=checkphone", { 'phone' : phone},function(data){
+                    if( data == 1 ){
+                        layer.alert('该手机已注册，请直接登陆！',()=>{
+							location.href="login.php";
+						});
+						setTimeout(()=>{
+							location.href="login.php";
+						},2000)	
+                    }
+            });
+        }
+    });
 	$("#submit_reg").click(function(){
 		var user = $("input[name='user']").val();
 		var pwd = $("input[name='pwd']").val();
 		var qq = $("input[name='qq']").val();
-		if(qq=='' || user=='' || pwd==''){layer.alert('请确保每项不能为空！');return false;}
+		var phone = $("input[name='phone']").val();
+		if(qq=='' || user=='' || pwd=='' || phone==''){layer.alert('请确保每项不能为空！');return false;}
 		if(qq.length<5){
 			layer.alert('QQ格式不正确！'); return false;
 		}else if(user.length<5){
@@ -55,8 +72,10 @@ $(document).ready(function(){
 			layer.alert('密码不能低于6位'); return false;
 		}else if(pwd.length>30){
 			layer.alert('密码太长'); return false;
+		}else if(!/^1[0-9]{10}$/.test(phone)){
+			layer.alert('手机号格式不正确！');return false;
 		}
-		var data = {user:user, pwd:pwd, qq:qq, hashsalt:hashsalt};
+		var data = {user:user, pwd:pwd, qq:qq, phone:phone,hashsalt:hashsalt};
 		if(captcha_type == 1){
 			var geetest_challenge = $("input[name='geetest_challenge']").val();
 			var geetest_validate = $("input[name='geetest_validate']").val();
@@ -96,7 +115,7 @@ $(document).ready(function(){
 				}else{
 					layer.alert(data.msg);
 				}
-			} 
+			}
 		});
 	});
 	if(captcha_type == 1){
