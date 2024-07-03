@@ -612,8 +612,15 @@ switch ($act) {
                 try {
                     $mobile_code = SmsRandom(4, 1);
                     $res = SendDuanXin($phone, $mobile_code);
-                    if ($res == 2) exit('{"code":1,"msg":"验证码发送成功，注意查收！"}');
-                    exit('{"code":-4,"msg":"发送失败，请联系管理员！"}');
+                    if ($res == 2) {
+                        exit('{"code":1,"msg":"验证码发送成功，注意查收！"}');
+                    } else {
+                        $data = date("Y-m-d H:i:s").' 错误码（请参考SmsApi文档） : '. $res  .' . 发送号码 : '.$phone;
+                        file_put_contents("../SmsError.log", $data, FILE_APPEND);
+                        exit('{"code":-4,"msg":"发送失败，请联系管理员！"}');
+
+                    }
+
 
                 } catch (\Throwable $th) {
                     //throw $th;
